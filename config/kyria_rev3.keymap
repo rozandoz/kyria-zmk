@@ -40,13 +40,20 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&kp TAB                         &kp Q  &kp W  &kp F     &kp P    &kp B                                              &kp J    &kp L     &kp U      &kp Y    &kp SEMI  &kp BSLH
-&caps_lock LEFT_CONTROL ESCAPE  &kp A  &kp R  &kp S     &kp T    &kp G                                              &kp M    &kp N     &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT                       &kp Z  &kp X  &kp C     &kp D    &kp V    &kp LSHFT  &kp LSHFT  &mo 1    &kp LSHFT  &kp K    &kp H     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                              &kp LGUI  &kp DEL  &kp RET  &kp SPACE  &kp ESC    &kp RET  &kp SPACE  &kp TAB  &kp BSPC  &kp RALT
+&kp TAB                         &kp Q  &kp W  &kp F         &kp P  &kp B                                                                    &kp J      &kp L  &kp U      &kp Y    &kp SEMI  &kp BSLH
+&caps_lock LEFT_CONTROL ESCAPE  &kp A  &kp R  &kp S         &kp T  &kp G                                                                    &kp M      &kp N  &kp E      &kp I    &kp O     &kp SQT
+&kp LSHFT                       &kp Z  &kp X  &kp C         &kp D  &kp V          &kp LEFT_BRACKET  &trans      &mo 2    &kp RIGHT_BRACKET  &kp K      &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                                              &kp LEFT_ALT  &mo 1  &kp BACKSPACE  &kp LEFT_SHIFT    &kp DELETE  &kp RET  &kp RSHFT          &kp SPACE  &mo 1  &kp RGUI
             >;
+        };
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        down_layer {
+            bindings = <
+&kp F1        &kp F2      &kp F3         &kp F4        &kp F5         &kp F6                                         &kp F7        &kp F8        &kp F9        &kp F10       &kp F11        &kp F12
+&kp N1        &kp N2      &kp N3         &kp N4        &kp N5         &kp N6                                         &kp N7        &kp N8        &kp N9        &kp N0        &kp MINUS      &kp EQUAL
+&kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &trans  &trans  &trans  &trans  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(UNDER)  &kp LS(PLUS)
+                                         &trans        &trans         &trans         &trans  &trans  &trans  &trans  &trans        &trans        &trans
+            >;
         };
 
         function_layer {
@@ -62,8 +69,6 @@
 &trans  &trans  &trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                             &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
