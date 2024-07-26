@@ -112,6 +112,146 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        cmb_excl {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <1 2>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
+        };
+
+        cmb_at {
+            bindings = <&kp AT>;
+            key-positions = <2 3>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
+        };
+
+        cmb_hash {
+            bindings = <&kp HASH>;
+            key-positions = <3 4>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
+        };
+
+        cmb_dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <4 5>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
+        };
+
+        cmb_perc {
+            bindings = <&kp PERCENT>;
+            key-positions = <27 26>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
+        };
+
+        cmb_carret {
+            bindings = <&kp CARET>;
+            key-positions = <28 27>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
+        };
+
+        cmb_amp {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <6 7>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
+        };
+
+        cmb_ast {
+            bindings = <&kp ASTERISK>;
+            key-positions = <7 8>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
+        };
+
+        cmb_left_par {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <8 9>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
+        };
+
+        cmb_right_par {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <9 10>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
+        };
+
+        cmb_under {
+            bindings = <&kp UNDER>;
+            key-positions = <36 35>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
+        };
+
+        cmb_plus {
+            bindings = <&kp PLUS>;
+            key-positions = <36 37>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
+        };
+
+        cmb_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <34 35>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
+        };
+
+        cmb_eq {
+            bindings = <&kp EQUAL>;
+            key-positions = <38 37>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
+        };
+
+        cmb_left_brac {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <17 16>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
+        };
+
+        cmb_right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <18 19>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
+        };
+
+        cmb_back_slash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <29 28>;
+            layers = <0>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
