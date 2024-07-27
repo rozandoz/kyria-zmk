@@ -120,7 +120,7 @@
             key-positions = <2 3>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
         };
 
         cmb_at {
@@ -128,7 +128,7 @@
             key-positions = <3 4>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
         };
 
         cmb_hash {
@@ -136,7 +136,7 @@
             key-positions = <4 2>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
         };
 
         cmb_dollar {
@@ -144,7 +144,7 @@
             key-positions = <16 15>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
         };
 
         cmb_perc {
@@ -152,7 +152,7 @@
             key-positions = <14 16>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
         };
 
         cmb_carret {
@@ -160,7 +160,7 @@
             key-positions = <14 15>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
         };
 
         cmb_amp {
@@ -168,7 +168,7 @@
             key-positions = <28 27>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
         };
 
         cmb_ast {
@@ -176,7 +176,7 @@
             key-positions = <28 15>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
         };
 
         cmb_left_par {
@@ -184,7 +184,7 @@
             key-positions = <19 20>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
         };
 
         cmb_right_par {
@@ -192,7 +192,7 @@
             key-positions = <19 21>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
         };
 
         cmb_under {
@@ -200,7 +200,7 @@
             key-positions = <20 21>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
         };
 
         cmb_plus {
@@ -208,7 +208,7 @@
             key-positions = <9 8>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
         };
 
         cmb_minus {
@@ -216,7 +216,7 @@
             key-positions = <37 36>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
         };
 
         cmb_eq {
@@ -224,7 +224,7 @@
             key-positions = <26 28>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
         };
 
         cmb_left_brac {
@@ -232,7 +232,7 @@
             key-positions = <35 36>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
         };
 
         cmb_right_bracket {
@@ -240,7 +240,7 @@
             key-positions = <35 37>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
         };
 
         cmb_back_slash {
@@ -248,13 +248,13 @@
             key-positions = <16 3>;
             layers = <0>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
         };
 
         cmb_left_brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <7 8>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
@@ -262,7 +262,7 @@
         cmb_right_brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <7 9>;
-            timeout-ms = <20>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
