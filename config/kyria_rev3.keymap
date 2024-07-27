@@ -110,13 +110,6 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 30 31 40 41 42 43 44 45 46 47 48 49>;
         };
-
-        td_paren: td_paren {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_PAREN";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
-        };
     };
 
     combos {
@@ -297,10 +290,10 @@
 
         sym_layer {
             bindings = <
-&trans  &kp LS(LBRC)   &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RBRC)                                                      &trans  &trans     &trans     &trans        &trans    &trans
-&trans  &kp LS(COLON)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(PLUS)                                                      &trans  &kp RCTRL  &kp RSHFT  &kp LEFT_ALT  &kp RGUI  &trans
-&trans  &kp LS(TILDE)  &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(PIPE)               &trans         &trans  &trans  &trans  &trans  &trans     &trans     &trans        &trans    &trans
-                                     &trans         &td_paren      &kp LS(RIGHT_PARENTHESIS)  &kp LS(UNDER)  &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &kp LEFT_BRACE  &kp AMPS    &kp ASTERISK  &kp MINUS             &kp RIGHT_BRACE                                           &trans  &trans     &trans     &trans        &trans    &trans
+&trans  &kp EQUAL       &kp DOLLAR  &kp PERCENT   &kp CARET             &kp PLUS                                                  &trans  &kp RCTRL  &kp RSHFT  &kp LEFT_ALT  &kp RGUI  &trans
+&trans  &kp BACKSLASH   &kp EXCL    &kp AT        &kp HASH              &kp PIPE               &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans        &trans    &trans
+                                    &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER  &trans  &trans  &trans  &trans  &trans     &trans
             >;
         };
 
@@ -330,10 +323,10 @@
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
 
             bindings = <
-&trans  &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans      &bt BT_SEL 3  &bt BT_SEL 4  &trans                                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans      &bt BT_SEL 3  &bt BT_SEL 4  &trans                                        &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR_ALL  &trans  &trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
