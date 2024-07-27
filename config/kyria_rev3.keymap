@@ -116,8 +116,6 @@
             label = "TD_PAREN";
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
-
-            tapping-term-ms = <100>;
         };
     };
 
