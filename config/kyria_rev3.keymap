@@ -110,6 +110,15 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 30 31 40 41 42 43 44 45 46 47 48 49>;
         };
+
+        td_paren: td_paren {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_PAREN";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+
+            tapping-term-ms = <100>;
+        };
     };
 
     combos {
@@ -293,7 +302,7 @@
 &trans  &kp LS(LBRC)   &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RBRC)                                                      &trans  &trans     &trans     &trans        &trans    &trans
 &trans  &kp LS(COLON)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(PLUS)                                                      &trans  &kp RCTRL  &kp RSHFT  &kp LEFT_ALT  &kp RGUI  &trans
 &trans  &kp LS(TILDE)  &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(PIPE)               &trans         &trans  &trans  &trans  &trans  &trans     &trans     &trans        &trans    &trans
-                                     &trans         &kp LS(LPAR)   &kp LS(RIGHT_PARENTHESIS)  &kp LS(UNDER)  &trans  &trans  &trans  &trans  &trans     &trans
+                                     &trans         &td_paren      &kp LS(RIGHT_PARENTHESIS)  &kp LS(UNDER)  &trans  &trans  &trans  &trans  &trans     &trans
             >;
         };
 
